@@ -1,0 +1,48 @@
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor</title>
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Traductor</h1>
+      <form id="translator-form">
+        <label for="word">Palabra/word:</label>
+        <input type="text" id="word" name="word" placeholder="Escribe una palabra">
+
+        <div>
+          <label>
+            <input type="radio" name="language" value="english" checked>
+            Inglés
+          </label>
+          <label>
+            <input type="radio" name="language" value="spanish">
+            Español
+          </label>
+        </div>
+
+        <button type="button" id="translate-btn">Traducir/Translate</button>
+      </form>
+
+      <div id="response">Aquí aparecerá la respuesta</div>
+
+      <h3>Categorías</h3>
+  <div>
+    <label><input type="radio" name="category" value="animals"> Animales</label>
+    <label><input type="radio" name="category" value="fruits"> Frutas</label>
+    <label><input type="radio" name="category" value="colors"> Colores</label>
+    <label><input type="radio" name="category" value="physical_descriptions"> Descripciones</label>
+    <label><input type="radio" name="category" value="skills"> Habilidades</label>
+    <label><input type="radio" name="category" value="verbs"> Verbos</label>
+  </div>
+  <button id="view-alphabetically">Ver Alfabeticamente</button>
+
+  <button id="new-word">Nueva palabra</button>
+
+  <script type="module" src="script.js"></script>
+
+  </body>
+  </html>
